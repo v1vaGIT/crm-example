@@ -1,0 +1,47 @@
+.planNameWrap {
+    position: relative;
+
+    .planName {
+        position: relative;
+    }
+
+    .planNameValue {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        min-width: 160px;
+        padding: 15px 14px;
+        border-radius: 10px;
+        background-color: #333340;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .planNameActive {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #494958;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+
+        //&:before {
+        //    content: '';
+        //    position: absolute;
+        //    width: 30px;
+        //    height: 2px;
+        //    top: 23px;
+        //    right: -30px;
+        //    background-color: #494958;
+        //}
+
+        .planNameValue {
+            background-color: #494958;
+        }
+    }
+}

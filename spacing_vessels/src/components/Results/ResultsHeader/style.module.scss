@@ -1,0 +1,61 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+
+    .descriptionWrap {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+
+        .description {
+            user-select: none;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: #85858c;
+            margin: 0;
+        }
+
+        .descriptionPopup {
+            cursor: initial;
+            width: 331px;
+            background: linear-gradient(0deg, #ffffff, #ffffff), #000000;
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+            border-radius: 24px 8px 24px 24px;
+            position: absolute;
+            right: 0;
+            top: 44px;
+            z-index: 999;
+            padding: 24px 24px 6px 24px;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+
+            .designationWrap {
+                display: flex;
+                align-items: center;
+                margin-bottom: 18px;
+
+                .designationCircle {
+                    opacity: 0.9;
+                    border-radius: 999px;
+                    margin-right: 16px;
+                    width: 16px;
+                    height: 16px;
+                }
+
+                .designationTitle {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

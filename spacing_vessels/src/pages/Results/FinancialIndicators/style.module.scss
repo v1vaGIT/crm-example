@@ -1,0 +1,33 @@
+.filtersTitle {
+    margin: 32px 0 0 0;
+    color: #333340;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.filtersWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.tabsWrap {
+    margin-top: 24px;
+}
+
+.tableWrap {
+    margin-top: 24px;
+}
+
+.tableListWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.preloaderWrap {
+    position: relative;
+    height: 300px;
+}

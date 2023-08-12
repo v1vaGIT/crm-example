@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    gap: 4px;
+
+    .department {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 15px;
+        border-radius: 8px;
+        background: #f4f6f7;
+        transition: background 0.2s;
+
+        &:not(.active) {
+            cursor: pointer;
+
+            &:hover {
+                background: #c1c1c14d;
+            }
+        }
+
+        &.active {
+            background: rgba(193, 193, 193, 0.5);
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: #333340;
+        }
+
+        .status {
+            padding: 4px 8px;
+            border-radius: 20px;
+            background: #ff9649;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        .done {
+            background: #3cbb41;
+        }
+    }
+}

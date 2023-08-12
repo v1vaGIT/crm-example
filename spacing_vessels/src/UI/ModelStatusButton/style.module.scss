@@ -1,0 +1,41 @@
+.btnReject {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 167px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    font-family: Inter, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+    background-color: #d14e4e;
+
+    white-space: nowrap;
+    user-select: none;
+    transition: background 0.2s;
+    cursor: initial;
+
+    &.headerBtnApprovedDisabled {
+        background-color: #fff;
+        color: #3cbb41;
+    }
+
+    &.headerBtnRejectDisabled {
+        background-color: #fff;
+        color: #d14e4e;
+    }
+
+    &.headerBtnReject {
+        cursor: pointer;
+        &:hover {
+            background: #cb0101;
+        }
+    }
+}

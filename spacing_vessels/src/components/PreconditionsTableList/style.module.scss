@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tableListWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.tableWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+
+    .preloaderWrap {
+        position: relative;
+        height: 200px;
+    }
+}
+
+.tableFillingWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.2s;
+
+    &.tableOpen {
+        height: auto;
+    }
+
+    .descriptionWrap {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-end;
+
+        .description {
+            flex: 1;
+            padding: 10px 16px;
+            border-radius: 8px;
+            background: #f4f6f7;
+
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+
+    .approveBtn {
+        align-self: flex-end;
+        display: flex;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: #3cbb41;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+            background: #2d9631;
+        }
+    }
+}
+
+.nestedTables {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 20px;
+    z-index: 3;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 2px;
+        height: calc(100% - 20px);
+        background-color: #8989af;
+        z-index: 1;
+    }
+
+    .tableWrap {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -10px;
+            width: 10px;
+            height: 2px;
+            background-color: #8989af;
+            z-index: 2;
+        }
+
+        &:last-child {
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: -15px;
+                width: 10px;
+                height: calc(100% - 20px);
+                background-color: #ffffff;
+                z-index: 2;
+            }
+        }
+    }
+}

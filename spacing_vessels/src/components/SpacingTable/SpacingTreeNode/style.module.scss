@@ -1,0 +1,120 @@
+.spacing {
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #494958;
+    }
+
+    &:before {
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    &:after {
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+
+    .node {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 73px;
+        padding: 11px 22px;
+        border-radius: 8px;
+
+        color: #000000;
+        background-color: #f4f6f7;
+
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+
+        cursor: pointer;
+        transition: background-color 0.15s;
+
+        &:hover {
+            background-color: #e9eaec;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 2px;
+            top: 18px;
+            left: -15px;
+            background-color: #494958;
+        }
+
+        &.nodeApproved {
+            color: #ffffff;
+            background-color: #3cbb41;
+
+            &:hover {
+                background-color: #36a43b;
+            }
+        }
+
+        &.nodeRejected {
+            color: #ffffff;
+            background-color: #ea5656;
+
+            &:hover {
+                background-color: #c74747;
+            }
+        }
+
+        &:hover ~ .nodeHoverList {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .nodeHoverList {
+        position: absolute;
+        z-index: 13;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(100% + 4px);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin: 0;
+        padding: 8px;
+        border-radius: 8px;
+
+        background: #ffffff;
+        color: #111111;
+        box-shadow: 0 4px 32px rgba(0, 0, 0, 0.14);
+
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 120%;
+
+        opacity: 0;
+        visibility: hidden;
+        transition-property: opacity, visibility;
+        transition-duration: 0.15s;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+
+            span {
+                white-space: nowrap;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #f4f6f7;
+    transition: background 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        //background: rgba(193, 193, 193, 0.3);
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    svg {
+        margin: 0 8px 0 2px;
+    }
+}

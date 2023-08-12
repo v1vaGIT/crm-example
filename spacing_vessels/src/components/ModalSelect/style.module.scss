@@ -1,0 +1,87 @@
+.modalSelect {
+    text-align: left;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+    width: 360px;
+    max-height: 377px;
+    padding: 15px 12px;
+    border-radius: 4px;
+
+    background: #ffffff;
+    color: #111111;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+
+    p {
+        margin: 0;
+    }
+
+    .title {
+        font-weight: 700;
+        color: #111111;
+    }
+
+    .list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #ffffff;
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #b4b4b4;
+            border-radius: 5px;
+            width: 3px;
+        }
+
+        .listValue {
+            padding: 9px;
+            margin-right: 4px;
+            border-radius: 4px;
+
+            color: #111111;
+            cursor: pointer;
+            transition: background-color 0.1s;
+
+            &:hover {
+                background-color: rgba(179, 179, 179, 0.5);
+            }
+        }
+    }
+
+    .btn {
+        text-align: center;
+
+        width: 100%;
+        padding: 14px 28px;
+        border-radius: 4px;
+
+        background-color: #272727;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: rgba(39, 39, 39, 0.95);
+        }
+    }
+}

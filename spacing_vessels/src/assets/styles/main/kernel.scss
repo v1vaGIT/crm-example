@@ -1,0 +1,104 @@
+.app-normalize {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+
+    font-family: 'Inter', sans-serif;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    .app-wrapper {
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+            border-radius: 16px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #f4f6f7;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #333340;
+            border-radius: 16px;
+        }
+
+        .react-datepicker {
+            position: absolute;
+            z-index: 10;
+        }
+
+        .Toastify {
+            z-index: 9999;
+        }
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.htCommentsContainer .htComments .htCommentTextArea {
+    height: 48px;
+    width: 350px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: none;
+
+    color: #ffffff;
+    background: rgba(17, 17, 17, 0.8);
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+
+    resize: none;
+
+    &:focus {
+        border-left: inherit;
+        border-right: inherit;
+        box-shadow: inherit;
+    }
+}
+
+.htCenter.htCommentCell:after {
+    display: none;
+}
+
+.workarea-content-custom {
+    position: relative;
+    z-index: 990;
+}
+
+.parent-root {
+    height: calc(100% - 35px);
+    min-height: 1px;
+}
+
+.menu-sliding-mode .menu-items-block {
+    z-index: 991;
+}

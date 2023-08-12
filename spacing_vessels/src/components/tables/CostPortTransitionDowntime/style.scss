@@ -1,0 +1,71 @@
+.cost-port-transition-downtime {
+    .htCore {
+        thead {
+            th {
+                &:first-child {
+                    border-radius: 0 0 0 0;
+                }
+            }
+
+            th {
+                &:last-child {
+                    border-radius: 0 0 0 0;
+                }
+            }
+
+            tr:first-child {
+                th:first-child {
+                    position: relative;
+                    border-radius: 8px 0 0 0;
+                    border-bottom: 0;
+                    overflow: visible;
+
+                    .relative {
+                        position: absolute;
+                        width: 100%;
+                        top: 50%;
+                        box-sizing: border-box;
+                    }
+                }
+
+                th:last-child {
+                    position: relative;
+                    border-radius: 0 8px 0 0;
+                    border-bottom: 0;
+                    overflow: visible;
+
+                    .relative {
+                        position: absolute;
+                        width: 100%;
+                        top: 50%;
+                        box-sizing: border-box;
+
+                        span {
+                            white-space: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+        tr:last-child {
+            td:first-child {
+                border-radius: 0 0 0 8px;
+            }
+
+            td:last-child {
+                border-radius: 0 0 8px 0;
+            }
+        }
+
+        td .htAutocompleteArrow {
+            color: transparent;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.64246 5.69672L8.00297 10.0572L12.3634 5.69672C12.6238 5.43638 13.0459 5.43638 13.3062 5.69672C13.5666 5.95708 13.5666 6.37919 13.3062 6.63953L8.47437 11.4714C8.3493 11.5965 8.17977 11.6667 8.00297 11.6667C7.82617 11.6667 7.65657 11.5965 7.53157 11.4714L2.69966 6.63953C2.66711 6.60699 2.63864 6.57192 2.61423 6.53495C2.44338 6.27619 2.47185 5.92453 2.69966 5.69672C2.96 5.43638 3.38212 5.43638 3.64246 5.69672Z' fill='%23333340'/%3E%3C/svg%3E");
+            cursor: pointer;
+
+            &:hover {
+                color: transparent;
+            }
+        }
+    }
+}

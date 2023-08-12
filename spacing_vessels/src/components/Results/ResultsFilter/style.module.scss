@@ -1,0 +1,80 @@
+.filter {
+    flex: calc(50% - 8px) 1 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ecedf1;
+    color: #333340;
+
+    .filterName {
+        font-size: 13px;
+        font-weight: 500;
+        opacity: 0.4;
+    }
+
+    .filterItemsWrap {
+        display: flex;
+        gap: 8px;
+    }
+
+    .allFilter {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .filterItems {
+        align-self: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .filterItem {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            .itemName {
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            .crossIcon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                min-width: 16px;
+                height: 16px;
+                border-radius: 4px;
+                background: #ea5656;
+                cursor: pointer;
+                transition: background-color 0.2s;
+
+                &:hover {
+                    background-color: #bb4242;
+                }
+            }
+        }
+    }
+
+    .plusIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-width: 16px;
+        height: 16px;
+        border-radius: 4px;
+        background-color: #3cbb41;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #339d36;
+        }
+    }
+}

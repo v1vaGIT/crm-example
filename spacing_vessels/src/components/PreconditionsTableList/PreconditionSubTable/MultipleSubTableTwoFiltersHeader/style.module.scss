@@ -1,0 +1,109 @@
+.tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #f4f6f7;
+    transition: background 0.2s;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+
+    &:hover {
+        //background: rgba(193, 193, 193, 0.3);
+    }
+
+    .filterWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .filter {
+        display: flex;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 10px;
+        border-radius: 4px;
+        background: #ecedf1;
+        cursor: initial;
+
+        .filterTitle {
+            color: #333340;
+            opacity: 0.4;
+        }
+
+        .filterItemList {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 8px;
+
+            .filterItem {
+                display: flex;
+                position: relative;
+
+                &:not(:last-child) {
+                    margin-right: 8px;
+                    padding-right: 8px;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 1px;
+                        height: 16px;
+                        background-color: #333340;
+                        opacity: 0.3;
+                    }
+                }
+
+                .filterItemTitle {
+                    font-weight: 600;
+                    margin-right: 8px;
+                }
+
+                .crossBtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 4px;
+                    background-color: #ea5656;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .btnGroup {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-width: 150px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: #333340;
+            letter-spacing: -0.03em;
+            user-select: none;
+
+            .btnText {
+                color: #ffffff;
+            }
+        }
+
+        svg {
+            margin-left: 8px;
+        }
+    }
+}

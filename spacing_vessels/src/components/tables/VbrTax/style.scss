@@ -1,0 +1,28 @@
+.vbr-table {
+    .htCore {
+        thead th {
+            &:first-child {
+                text-align: left;
+                border-radius: 8px 0 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0 8px 0 0;
+            }
+        }
+
+        tr:last-child {
+            td:first-child {
+                border-radius: 0 0 0 8px;
+            }
+
+            td:last-child {
+                border-radius: 0 0 8px 0;
+            }
+        }
+    }
+
+    & span {
+        font-size: 11px !important;
+    }
+}

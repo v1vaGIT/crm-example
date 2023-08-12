@@ -1,0 +1,70 @@
+.tableWrap {
+    max-width: 100%;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    &::-webkit-scrollbar-track {
+        //background-color: #f4f6f7;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #333340;
+        border-radius: 4px;
+    }
+}
+
+.finances {
+    width: 100%;
+    background-color: #cccccc;
+    border-spacing: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    thead tr:first-child {
+        font-weight: 700;
+
+        td:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        td:last-child {
+            border-radius: 0 8px 0 0;
+        }
+    }
+
+    tbody tr:last-child {
+        font-weight: 700;
+
+        td:first-child {
+            border-radius: 0 0 0 8px;
+        }
+
+        td:last-child {
+            border-radius: 0 0 8px 0;
+        }
+    }
+
+    td,
+    th {
+        text-align: center;
+        min-height: 100%;
+        padding: 12px 8px;
+        background-color: #ffffff;
+        font-size: 11px;
+
+        &:first-child {
+            text-align: left;
+            font-weight: 700;
+        }
+
+        &:last-child {
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+* text eol=lf
+
+# Don't diff or textually merge source maps
+*.map   binary
+
+# Avoid unreadable diffs for generated text files, eg: *.min.js
+*.min.* binary
+
+# Image files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.ico binary
+*.gif binary
+
+# Other binary
+*.zip binary
+*.7z binary
+*.gz binary
+*.psd binary
+*.tar binary
+*.ttf binary
+*.eot binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Export ignores
+tests export-ignore
+.github export-ignore
+.gitlab export-ignore
+
+/.yarn/** linguist-vendored
+/.yarn/releases/* binary
+/.yarn/plugins/**/* binary
+/.pnp.* binary linguist-generated
+
+node_modules/ linguist-vendored=false

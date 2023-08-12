@@ -1,0 +1,115 @@
+.modalWrapper {
+    position: fixed;
+    z-index: 161;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 16px;
+    width: 336px;
+    max-height: 377px;
+    padding: 22px 16px;
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: #363939;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.16);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+
+    p {
+        margin: 0;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .closeImg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 99px;
+            background-color: #f4f6f7;
+            cursor: pointer;
+            transition: background-color 0.15s;
+
+            &:hover {
+                background-color: #e5e5e5;
+            }
+        }
+    }
+
+    .children {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #ffffff;
+            width: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #b4b4b4;
+            border-radius: 5px;
+            width: 3px;
+        }
+    }
+
+    .btn {
+        text-align: center;
+
+        width: 100%;
+        padding: 9px 28px;
+        border-radius: 6px;
+
+        background-color: #000000;
+        color: #ffffff;
+
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 150%;
+
+        transition: background-color 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(39, 39, 39, 0.95);
+        }
+    }
+}

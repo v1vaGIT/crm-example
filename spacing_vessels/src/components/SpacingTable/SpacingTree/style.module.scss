@@ -1,0 +1,124 @@
+.date {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    .nodeDate {
+        position: relative;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #494958;
+        }
+
+        &:before {
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        &:after {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+
+    .nodeDateValue {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 73px;
+        padding: 11px 22px;
+        border-radius: 8px;
+
+        color: #000000;
+        background-color: #d8dbde;
+
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+
+        cursor: pointer;
+    }
+
+    .spacingsWrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 19px;
+            left: -16px;
+            width: 2px;
+            height: calc(100% - 37px);
+            border-radius: 0 0 0 5px;
+            background-color: #494958;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            top: 18px;
+            left: -30px;
+            background-color: #494958;
+        }
+
+        .spacings {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+
+            &:last-child:before {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: calc(100% - 20px);
+                top: 20px;
+                left: -17px;
+                background-color: #ffffff;
+            }
+
+            .children {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 19px;
+                    left: -16px;
+                    width: 2px;
+                    height: calc(100% - 37px);
+                    border-radius: 0 0 0 5px;
+                    background-color: #494958;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 2px;
+                    top: 18px;
+                    left: -30px;
+                    background-color: #494958;
+                }
+            }
+        }
+    }
+}

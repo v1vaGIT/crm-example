@@ -1,0 +1,74 @@
+.tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 8px;
+    background: #f4f6f7;
+    transition: background 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(193, 193, 193, 0.3);
+    }
+
+    .tableTitle {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333340;
+    }
+
+    .tableApprovalWrap {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .tableApproval {
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            gap: 8px;
+            border-radius: 30px;
+            background-color: #ea5656;
+            color: #ffffff;
+
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 13px;
+            user-select: none;
+
+            &.tableApproved {
+                background: #3cbb41;
+            }
+
+            &.tableEmpty {
+                background: #ea5656;
+            }
+
+            span {
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: #333340;
+            letter-spacing: -0.03em;
+
+            &:last-child {
+                margin-right: 8px;
+            }
+
+            .btnText {
+                color: #ffffff;
+            }
+        }
+    }
+}

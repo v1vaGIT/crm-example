@@ -1,0 +1,52 @@
+.transition-timing-table {
+    .ht_master {
+        .htCore tr:last-child td:last-child {
+            border-radius: 0 0 8px 0;
+        }
+    }
+
+    .ht_master,
+    .ht_clone_top,
+    .ht_clone_left,
+    .ht_clone_top_left_corner {
+        .htCore th {
+            font-size: 11px !important;
+            line-height: 13px !important;
+
+            .relative {
+                padding: 13px 8px !important;
+            }
+        }
+    }
+
+    .ht_clone_top_left_corner,
+    .ht_clone_top {
+        .htCore th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+    }
+
+    .ht_clone_top {
+        .htCore th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+    }
+
+    .ht_clone_left {
+        .htCore tr:last-child th:last-child {
+            border-radius: 0 0 0 8px;
+        }
+    }
+
+    .empty {
+        background-color: #ebebec !important;
+    }
+
+    .light-grey {
+        background: linear-gradient(30deg, rgba(235, 235, 236, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        text-align: center;
+    }
+    .light-grey:after {
+        content: unset !important;
+    }
+}

@@ -1,0 +1,139 @@
+.tableWrap {
+    width: 100%;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    &::-webkit-scrollbar-track {
+        //background-color: #f4f6f7;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #333340;
+        border-radius: 4px;
+    }
+}
+
+table.outputWithFilter {
+    margin-top: 16px;
+    width: 100%;
+    border-spacing: 1px;
+    border-radius: 8px;
+    background-color: #cccccc;
+    overflow: hidden;
+    font-size: 13px;
+
+    td {
+        text-align: center;
+        padding: 8px;
+        background-color: #ffffff;
+        font-weight: 500;
+    }
+
+    thead {
+        td {
+            padding: 4px 8px;
+            font-weight: 700;
+        }
+
+        tr:first-child {
+            font-weight: 700;
+            border-radius: 8px 8px 0 0;
+
+            td:first-child {
+                text-align: left;
+                border-radius: 8px 0 0 0;
+            }
+
+            td:last-child {
+                border-radius: 0 8px 0 0;
+            }
+        }
+
+        tr:last-child {
+            font-weight: 700;
+            font-size: 11px;
+        }
+    }
+
+    tbody tr {
+        td:first-child {
+            white-space: nowrap;
+        }
+
+        td:last-child {
+            font-weight: 700;
+        }
+
+        &:last-child {
+            td:first-child {
+                border-radius: 0 0 0 8px;
+            }
+
+            td:last-child {
+                border-radius: 0 0 8px 0;
+            }
+        }
+    }
+
+    .firstItem {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        gap: 8px;
+        min-width: 150px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+
+        svg {
+            min-width: 16px;
+            min-height: 16px;
+        }
+    }
+
+    .firstNestedItem {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        gap: 8px;
+        min-width: 150px;
+        padding-left: 16px;
+        font-weight: 700;
+        font-size: 11px;
+        cursor: pointer;
+
+        svg {
+            min-width: 16px;
+            min-height: 16px;
+        }
+    }
+
+    .secondNestedItem {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        gap: 8px;
+        min-width: 150px;
+        padding-left: 24px;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        cursor: pointer;
+
+        svg {
+            min-width: 16px;
+            min-height: 16px;
+        }
+    }
+
+    .childrenRow td:first-child {
+        text-align: left;
+        font-size: 11px;
+    }
+}
